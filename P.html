@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Skyblue Tailwind Preview</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            skyblue: '#87CEFA',
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-gray-900 min-h-screen flex items-center justify-center p-6">
+  <div class="text-center space-y-6">
+    
+    <!-- Text color preview -->
+    <h1 class="text-4xl font-bold text-skyblue">Skyblue Heading</h1>
+
+    <!-- Background color preview -->
+    <div class="bg-skyblue text-gray-900 font-semibold px-6 py-3 rounded-lg shadow-lg">
+      This is bg-skyblue
+    </div>
+
+    <!-- Border color preview -->
+    <div class="border-4 border-skyblue text-white px-6 py-3 rounded-lg">
+      Border skyblue
+    </div>
+
+    <!-- Button example -->
+    <button class="bg-skyblue hover:bg-skyblue/80 text-gray-900 px-6 py-2 rounded-full font-medium transition">
+      Skyblue Button
+    </button>
+
+  </div>
+</body>
+</html>
